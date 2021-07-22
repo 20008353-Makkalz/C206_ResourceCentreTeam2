@@ -222,7 +222,7 @@ public class ResourceCentre {
 	}
 	
 	public static boolean doLoanChromebook(ArrayList<Chromebook> chromebookList, String tag, String dueDate) {
-		// write your code here Gilbert
+		// write your code here Gilbertng
 		boolean isLoaned = false;
 		for(int i = 0; i<chromebookList.size(); i++) {
 			if(tag.equalsIgnoreCase(chromebookList.get(i).getAssetTag()) && 

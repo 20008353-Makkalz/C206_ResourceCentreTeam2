@@ -112,7 +112,7 @@ public class ResourceCentreTest {
 	@Test
 	public void testInputChromebook()
 	{
-		//YuanWei
+		//YuanWei2
 	}
 	
 	@After

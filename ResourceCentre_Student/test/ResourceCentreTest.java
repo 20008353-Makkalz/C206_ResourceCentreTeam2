@@ -116,7 +116,7 @@ public class ResourceCentreTest {
 	@Test
 	public void testInputChromebook()
 	{
-		//YuanWei2
+		//YuanWei3
 	}
 	
 >>>>>>> branch 'master' of https://github.com/20008353-Makkalz/C206_ResourceCentreTeam2.git

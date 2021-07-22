@@ -93,6 +93,15 @@ public class ResourceCentreTest {
 		//fail("Not yet implemented");
 		// write your code here
 		//Fazia 1
+		// Test if the item list not null so that can add new items
+		
+		assertNotNull("Test if there is valid chromebook arraylist to add to" , chromebookList);
+		
+		// test if the chromebook list that retrieved from the sourceCentre is empty
+		
+		String allChromebook= ResourceCentre.retrieveAllChromebook(chromebookList);
+		String testOutput = "";
+		
 	}
 
 	@Test

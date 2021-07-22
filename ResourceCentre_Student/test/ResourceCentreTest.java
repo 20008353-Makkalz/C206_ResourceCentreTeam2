@@ -167,11 +167,6 @@ public class ResourceCentreTest {
 		// write your code here
 	}
 	
-	@Test
-	public void testInputChromebook()
-	{
-		//YuanWei3
-	}
 	
 
 	@After

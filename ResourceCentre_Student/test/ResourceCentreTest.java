@@ -107,8 +107,6 @@ public class ResourceCentreTest {
 		// write your code here
 		//Vijay Govinraju
 		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
-		String allChromebook= ResourceCentre.retrieveAllChromebook(chromebookList);
-		String testOutput = "";
 		assertEquals("Check that ViewAllChromebooklist", testOutput, allChromebook);
 		ResourceCentre.addChromebook(chromebookList, cb1);
 		ResourceCentre.addChromebook(chromebookList, cb2);

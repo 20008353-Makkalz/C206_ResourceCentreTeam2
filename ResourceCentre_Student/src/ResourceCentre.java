@@ -128,7 +128,7 @@ public class ResourceCentre {
 
 		for (int i = 0; i < camcorderList.size(); i++) {
 
-			output += String.format("%-10s %-30s %-10s %-10s %-20d\n", camcorderList.get(i).getAssetTag(),
+			output += String.format("%-10s %-30s %-30s %-30s %-20d\n", camcorderList.get(i).getAssetTag(),
 					camcorderList.get(i).getDescription(), 
 					ResourceCentre.showAvailability(camcorderList.get(i).getIsAvailable()),
 					camcorderList.get(i).getDueDate(),camcorderList.get(i).getOpticalZoom());
@@ -137,7 +137,7 @@ public class ResourceCentre {
 	}
 	public static void viewAllCamcorder(ArrayList<Camcorder> camcorderList) {
 		ResourceCentre.setHeader("CAMCORDER LIST");
-		String output = String.format("%-10s %-30s %-10s %-10s %-20s\n", "ASSET TAG", "DESCRIPTION",
+		String output = String.format("%-10s %-30s %-30s %-30s %-20s\n", "ASSET TAG", "DESCRIPTION",
 				"AVAILABLE", "DUE DATE","OPTICAL ZOOM");
 		 output += retrieveAllCamcorder(camcorderList);	
 		System.out.println(output);
@@ -146,18 +146,31 @@ public class ResourceCentre {
 	public static String retrieveAllChromebook(ArrayList<Chromebook> chromebookList) {
 		String output = "";
 		// write your code here
+<<<<<<< HEAD
 		for (int i = 0; i < chromebookList.size(); i++) {
 
 			output += String.format("%-10s %-30s %-10s %-10s %-20d\n", chromebookList.get(i).getAssetTag(),
 					chromebookList.get(i).getDescription(), 
 					ResourceCentre.showAvailability(chromebookList.get(i).getIsAvailable()),
 					chromebookList.get(i).getDueDate());
+=======
+		//Vijay Govinraju
+		for (int i = 0; i < chromebookList.size(); i++) {
+			output += String.format("%-10s %-30s %-30s %-30s %-20s\n", chromebookList.get(i).getAssetTag(),
+					chromebookList.get(i).getDescription(), 
+					ResourceCentre.showAvailability(chromebookList.get(i).getIsAvailable()),
+					chromebookList.get(i).getDueDate(),chromebookList.get(i).getOs());
+>>>>>>> branch 'master' of https://github.com/20008353-Makkalz/C206_ResourceCentreTeam2.git
 		}
 		return output;
+		
 	}
 	public static void viewAllChromebook(ArrayList<Chromebook> chromebookList) {
-		
-		String output = retrieveAllChromebook(chromebookList);
+		//Vijay Govinraju
+		ResourceCentre.setHeader("CHROMEBOOK LIST");
+		String output = String.format("%-10s %-30s %-30s %-30s %-20s\n", "ASSET TAG", "DESCRIPTION",
+				"AVAILABLE", "DUE DATE","OS");
+		output += retrieveAllChromebook(chromebookList);
 		System.out.println(output);
 	}
 
@@ -180,11 +193,17 @@ public class ResourceCentre {
 	public static Chromebook inputChromebook() {	
 		Chromebook cb =null;
 		// write your code here
+		String tag = Helper.readString("Enter asset tag > ");
+		String description = Helper.readString("Enter description > ");
+		String os = Helper.readString("Enter Operating System > ");
+		cb = new Chromebook(tag,description,os);
 		return cb;
 		
 	}	
 	public static void addChromebook(ArrayList<Chromebook> chromebookList, Chromebook cb) {
 		// write your code here
+		chromebookList.add(cb);
+		System.out.println("Chromebook Addded !");
 	}
 	
 	//================================= Option 3 Loan an item (CRUD - Update) =================================

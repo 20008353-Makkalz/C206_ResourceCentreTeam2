@@ -153,6 +153,7 @@ public class ResourceCentre {
 					chromebookList.get(i).getDueDate(),chromebookList.get(i).getOs());
 		}
 		return output;
+		
 	}
 	public static void viewAllChromebook(ArrayList<Chromebook> chromebookList) {
 		ResourceCentre.setHeader("CHROMEBOOK LIST");

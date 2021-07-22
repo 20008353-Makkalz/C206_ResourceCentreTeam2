@@ -52,6 +52,16 @@ public class ResourceCentreTest {
 	public void testAddChromebook() {
 		//fail("Not yet implemented");
 		// write your code here
+		//YuanWei
+		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
+		
+		ResourceCentre.addChromebook(chromebookList, cb1);
+		assertEquals("Test if that Camcorder arraylist size is 1?", 1, chromebookList.size());
+		
+		assertSame("Test that Chromebook is added same as 1st item of the list?", cb1, chromebookList.get(0));
+		
+		ResourceCentre.addChromebook(chromebookList, cb2);
+		assertEquals("Test that Camcorder arraylist size is 2?", 2, chromebookList.size());
 	}
 	
 	@Test
@@ -82,12 +92,29 @@ public class ResourceCentreTest {
 	public void testRetrieveAllChromebook() {
 		//fail("Not yet implemented");
 		// write your code here
+		//Vijay Govinraju test
+		assertNotNull("Test if there is valid Camcorder arraylist to add to", chromebookList);
+		String allChromebook= ResourceCentre.retrieveAllChromebook(chromebookList);
+		String testOutput = "";
+		assertEquals("Check that ViewAllChromebooklist", testOutput, allChromebook);
+		ResourceCentre.addChromebook(chromebookList, cb1);
+		ResourceCentre.addChromebook(chromebookList, cb2);
+		assertEquals("Test if that Chromebook arraylist size is 2?", 2, chromebookList.size());
+		
+		allChromebook= ResourceCentre.retrieveAllChromebook(chromebookList);
+
+		testOutput = String.format("%-10s %-30s %-10s %-10s %-20s\n","CB0011", "My Google Chromebook 1st", "Yes", "", "Mac OS");
+		testOutput += String.format("%-10s %-30s %-10s %-10s %-20s\n","CB0012", "SAMSUNG Chromebook 4+", "Yes", "", "Win 10");
+	
+		assertEquals("Check that ViewAllChromebooklist", testOutput, allChromebook);
+	
 	}
 
 	@Test
 	public static boolean testDoLoanCamcorder(ArrayList<Camcorder> camcorderList, String tag, String dueDate) {
 		//fail("Not yet implemented");
 		// write your code here
+
 		//done by Jean-Claude
 		boolean isLoaned = false;
 
@@ -102,7 +129,7 @@ public class ResourceCentreTest {
 				
 			}
 		}
-		return isLoaned;
+		return isLoaned; 
 	}
 	
 	@Test
@@ -131,6 +158,8 @@ public class ResourceCentreTest {
 		//fail("Not yet implemented");
 		// write your code here
 		
+		
+		
 	}
 	@Test
 	public void testDoReturnChromebook() {
@@ -138,6 +167,13 @@ public class ResourceCentreTest {
 		// write your code here
 	}
 	
+	@Test
+	public void testInputChromebook()
+	{
+		//YuanWei3
+	}
+	
+
 	@After
 	public void tearDown() throws Exception {
 		cc1 = null;

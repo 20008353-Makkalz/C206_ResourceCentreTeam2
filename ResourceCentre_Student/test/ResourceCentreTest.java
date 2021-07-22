@@ -95,8 +95,10 @@ public class ResourceCentreTest {
 	public void testDoLoanChromebook() {
 		//fail("Not yet implemented");
 		// write your code here
+		// Gilbert
+		
 	}
-	
+		
 	@Test
 	public void testDoReturnCamcorder() {
 		//fail("Not yet implemented");

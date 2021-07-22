@@ -122,15 +122,8 @@ public class ResourceCentreTest {
 		// write your code here
 	}
 	
-<<<<<<< HEAD
-=======
-	@Test
-	public void testInputChromebook()
-	{
-		//YuanWei3
-	}
 	
->>>>>>> branch 'master' of https://github.com/20008353-Makkalz/C206_ResourceCentreTeam2.git
+//github.com/20008353-Makkalz/C206_ResourceCentreTeam2.git
 	@After
 	public void tearDown() throws Exception {
 		cc1 = null;

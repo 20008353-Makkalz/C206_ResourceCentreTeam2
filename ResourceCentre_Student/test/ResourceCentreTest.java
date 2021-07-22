@@ -143,7 +143,7 @@ public class ResourceCentreTest {
 	public static boolean testDoLoanChromebook(ArrayList<Chromebook> chromebookList, String tag, String dueDate) {
 		//fail("Not yet implemented");
 
-		// Gilbert77777
+		// Gilbertngyk
 		//////test if list is empty
 		assertNotNull("Test if there is available Chromebook", chromebookList);
 		

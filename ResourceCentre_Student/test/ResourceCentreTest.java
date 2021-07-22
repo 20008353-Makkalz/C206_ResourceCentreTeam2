@@ -88,6 +88,7 @@ public class ResourceCentreTest {
 	public void testDoLoanCamcorder() {
 		//fail("Not yet implemented");
 		// write your code here
+		//test if list is empty
 		
 	}
 	
@@ -95,7 +96,9 @@ public class ResourceCentreTest {
 	public void testDoLoanChromebook() {
 		//fail("Not yet implemented");
 		// write your code here
-		// Gilbert222
+		// Gilbert77777
+		//////test if list is empty
+		assertNotNull("Test if there is available Chromebook", camcorderList);
 		
 	}
 		
@@ -111,6 +114,14 @@ public class ResourceCentreTest {
 		// write your code here
 	}
 	
+
+	@Test
+	public void testInputChromebook()
+	{
+		//YuanWei2
+	}
+	
+
 	@After
 	public void tearDown() throws Exception {
 		cc1 = null;

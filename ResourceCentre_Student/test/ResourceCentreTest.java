@@ -88,7 +88,7 @@ public class ResourceCentreTest {
 	public void testDoLoanCamcorder() {
 		//fail("Not yet implemented");
 		// write your code here
-		// fazia 
+		// 1 Fazia 
 	}
 	
 	@Test
@@ -111,6 +111,15 @@ public class ResourceCentreTest {
 		// write your code here
 	}
 	
+<<<<<<< HEAD
+=======
+	@Test
+	public void testInputChromebook()
+	{
+		//YuanWei2
+	}
+	
+>>>>>>> branch 'master' of https://github.com/20008353-Makkalz/C206_ResourceCentreTeam2.git
 	@After
 	public void tearDown() throws Exception {
 		cc1 = null;

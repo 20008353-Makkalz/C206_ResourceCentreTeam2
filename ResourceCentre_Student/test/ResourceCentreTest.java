@@ -82,7 +82,10 @@ public class ResourceCentreTest {
 	public void testRetrieveAllChromebook() {
 		//fail("Not yet implemented");
 		// write your code here
-		//Vijay Govinraju user
+		//Vijay Govinraju
+		String output = String.format("%-10s %-30s %-20s %-20s %-20d\n","ASSET TAG", "DESCRIPTION", "AVAILABILITY", "OS");
+		System.out.println(output);
+		
 	}
 
 	@Test

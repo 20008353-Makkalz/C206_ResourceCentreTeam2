@@ -56,12 +56,12 @@ public class ResourceCentreTest {
 		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
 		
 		ResourceCentre.addChromebook(chromebookList, cb1);
-		assertEquals("Test if that Camcorder arraylist size is 1?", 1, chromebookList.size());
+		assertEquals("Test if that Chromebook arraylist size is 1?", 1, chromebookList.size());
 		
 		assertSame("Test that Chromebook is added same as 1st item of the list?", cb1, chromebookList.get(0));
 		
 		ResourceCentre.addChromebook(chromebookList, cb2);
-		assertEquals("Test that Camcorder arraylist size is 2?", 2, chromebookList.size());
+		assertEquals("Test that Chromebook arraylist size is 2?", 2, chromebookList.size());
 	}
 	
 	@Test
@@ -93,7 +93,7 @@ public class ResourceCentreTest {
 		//fail("Not yet implemented");
 		// write your code here
 		//Vijay Govinraju test
-		assertNotNull("Test if there is valid Camcorder arraylist to add to", chromebookList);
+		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
 		String allChromebook= ResourceCentre.retrieveAllChromebook(chromebookList);
 		String testOutput = "";
 		assertEquals("Check that ViewAllChromebooklist", testOutput, allChromebook);

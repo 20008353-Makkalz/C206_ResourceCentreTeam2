@@ -88,7 +88,7 @@ public class ResourceCentreTest {
 	public void testDoLoanCamcorder() {
 		//fail("Not yet implemented");
 		// write your code here
-		
+		// fazia 
 	}
 	
 	@Test
@@ -102,17 +102,13 @@ public class ResourceCentreTest {
 		//fail("Not yet implemented");
 		// write your code here
 		
+		
+		
 	}
 	@Test
 	public void testDoReturnChromebook() {
 		//fail("Not yet implemented");
 		// write your code here
-	}
-	
-	@Test
-	public void testInputChromebook()
-	{
-		//YuanWei
 	}
 	
 	@After

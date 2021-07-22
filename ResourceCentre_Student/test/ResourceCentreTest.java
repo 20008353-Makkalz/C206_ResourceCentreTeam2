@@ -109,6 +109,12 @@ public class ResourceCentreTest {
 		// write your code here
 	}
 	
+	@Test
+	public void testInputChromebook()
+	{
+		//YuanWei
+	}
+	
 	@After
 	public void tearDown() throws Exception {
 		cc1 = null;

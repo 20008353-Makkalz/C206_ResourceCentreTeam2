@@ -95,7 +95,7 @@ public class ResourceCentreTest {
 	public void testDoLoanChromebook() {
 		//fail("Not yet implemented");
 		// write your code here
-		// Gilbert
+		// Gilbert222
 		
 	}
 		
@@ -109,12 +109,6 @@ public class ResourceCentreTest {
 	public void testDoReturnChromebook() {
 		//fail("Not yet implemented");
 		// write your code here
-	}
-	
-	@Test
-	public void testInputChromebook()
-	{
-		//YuanWei
 	}
 	
 	@After

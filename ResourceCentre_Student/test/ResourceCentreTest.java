@@ -52,6 +52,16 @@ public class ResourceCentreTest {
 	public void testAddChromebook() {
 		//fail("Not yet implemented");
 		// write your code here
+		//YuanWei
+		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
+		
+		ResourceCentre.addChromebook(chromebookList, cb1);
+		assertEquals("Test if that Camcorder arraylist size is 1?", 1, chromebookList.size());
+		
+		assertSame("Test that Chromebook is added same as 1st item of the list?", cb1, chromebookList.get(0));
+		
+		ResourceCentre.addChromebook(chromebookList, cb2);
+		assertEquals("Test that Camcorder arraylist size is 2?", 2, chromebookList.size());
 	}
 	
 	@Test
@@ -82,17 +92,19 @@ public class ResourceCentreTest {
 	public void testRetrieveAllChromebook() {
 		//fail("Not yet implemented");
 		// write your code here
-		//Vijay Govinraju
+		
+		//Vijay Govinraju test
 		String output = String.format("%-10s %-30s %-20s %-20s %-20d\n","ASSET TAG", "DESCRIPTION", "AVAILABILITY", "OS");
 		System.out.println(output);
 		
+		//Fazia 1
 	}
 
 	@Test
 	public void testDoLoanCamcorder() {
 		//fail("Not yet implemented");
 		// write your code here
-		
+		//  
 	}
 	
 	@Test
@@ -106,6 +118,8 @@ public class ResourceCentreTest {
 		//fail("Not yet implemented");
 		// write your code here
 		
+		
+		
 	}
 	@Test
 	public void testDoReturnChromebook() {
@@ -116,7 +130,7 @@ public class ResourceCentreTest {
 	@Test
 	public void testInputChromebook()
 	{
-		//YuanWei2
+		//YuanWei3
 	}
 	
 	@After
